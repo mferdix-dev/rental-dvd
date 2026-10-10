@@ -33,8 +33,8 @@ Aplikasi Web Manajemen Rental & Booking DVD berbasis PHP & MySQL dengan template
 
 ### 1. Clone / Tarik Repository
 ```bash
-git clone <url-repository>
-cd rental-dvd.github.io
+git clone https://github.com/mferdix-dev/rental-dvd.git
+cd rental-dvd
 ```
 
 ### 2. Import Database
