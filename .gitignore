@@ -1,25 +1,20 @@
-# CakePHP 3
+# Environment and Local Config
+.env
+.env.local
+config.local.php
 
-/vendor/*
-/config/app.php
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# IDE & Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
 
-/logs/*
-!/logs/empty
-
-# CakePHP 2
-
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Logs and Temp
+*.log
+/tmp/

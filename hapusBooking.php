@@ -1,16 +1,13 @@
 <?php
+declare(strict_types=1);
 
-// session_start();
+require_once "machine.php";
 
-require "machine.php";
+$id = isset($_GET["id"]) ? (int)$_GET["id"] : 0;
 
-$id = $_GET["id"];
+if ($id > 0) {
+    hapusBooking($id);
+}
 
-$query = "DELETE FROM `booking` WHERE id = '$id'";
-
-mysqli_query($conn, $query);
-
-header("location:tableBooking.php");
-
-
- ?>
+header("Location: tableBooking.php");
+exit;

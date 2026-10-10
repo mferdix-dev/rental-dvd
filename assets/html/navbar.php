@@ -1,13 +1,35 @@
+<?php
+$navbarTitle = $pageTitle ?? 'Rental DVD Lightning';
+?>
 <nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Rental DVD Lightning</a>
-                </div>
-            </div>
-        </nav>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><?= htmlspecialchars($navbarTitle, ENT_QUOTES, 'UTF-8') ?></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.php">
+                        <i class="fa fa-dashboard"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="filmList.php">
+                        <i class="fa fa-film"></i> Kelola Film
+                    </a>
+                </li>
+                <li>
+                    <a href="tableBooking.php">
+                        <i class="fa fa-book"></i> Kelola Booking
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
